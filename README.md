@@ -17,3 +17,9 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+$f(n)\in O(g(n)) \iff \exists c,n_0 >0, \forall n\ge n_0: f(n) \le c g(n)$
+
+In little 𝑜, we have f(n) < c.g(n) for any positive constant c. This implies that f(n) grows strictly slower than g(n), as it's always strictly less than c.g(n) for any chosen c. So, if f(n) is always less than c.g(n) for any c, then it must also be less than or equal to c.g(n) for a specific c, which is the defination of big 
+O. Thus, if f(n) satisfies the little o definition, it automatically satisfies the big O definition as well. Giving us that $f(n)\in o(g(n))$ implies
+that $f(n)\in O(g(n))$.
