@@ -24,8 +24,17 @@ In little 𝑜, we have f(n) < c.g(n) for any positive constant c. This implies 
 O. Thus, if f(n) satisfies the little o definition, it automatically satisfies the big O definition as well. Giving us that $f(n)\in o(g(n))$ implies
 that $f(n)\in O(g(n))$.
 
-
+Other difference:
+In big O notation, we have f(n) <= c*g(n) for all $n > n_0$ for some constants c and $n_0$. This implies that there exists a constant scaling factor c such that f(n) is bounded above by c*g(n) for sufficiently large values of n. On the other hand, in little o notation, we have f(n) < c*g(n) for all $n > n_0$ for any positive constant c. This means that for any constant scaling factor c, no matter how large, f(n) will always be strictly less than c*g(n) for sufficiently large values of n. Therefore, $f(n)\in o(g(n))$ implies that $f(n)\in O(g(n))$.
 
 references:
+
 Stackoverflow
+
 Geeks for geeks
+
+ChatGPT used for understanding the differences between the definitions that I missed.
+
+little-o-proof-swilson59-1
+
+little-o-proof-IshitaPatel18
